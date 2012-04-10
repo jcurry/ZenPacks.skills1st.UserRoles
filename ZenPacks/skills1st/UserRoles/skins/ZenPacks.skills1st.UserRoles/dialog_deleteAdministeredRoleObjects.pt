@@ -1,0 +1,17 @@
+<h2>Delete Administered Role Objects</h2>
+<br/><br/>
+<p>
+Please delete Organizer items from the appropriate Organizer DETAILS menu<br/>
+
+Are you sure you want to remove these Administered Objects?<br/>
+</p>
+<br/>
+<div id="dialog_buttons">
+<input type="submit" name="manage_deleteAdministrativeRole:method" value="OK"
+    tal:attributes="onclick string:return $$('dialog').submit_form(
+                        '${here/absolute_url}')" />
+<input tal:attributes="id string:dialog_cancel;
+                        type string:button;
+                        value string:Cancel;
+                        onclick string:$$('dialog').hide()" />
+</div>

@@ -1,0 +1,50 @@
+ZenPack to overcome issues with Administered Objects code in Core
+
+Please see the comments at the start of __init__.py for most of the detail of what this
+ZenPack does.  
+
+__init__.py has most of the code.
+
+There are some skins files to implement an extra Role menu but this functionality is
+currently commented out.
+
+configure.zcml wires-in the Role menu.
+
+objects/objects.xml defines 2 new dropdown menus for the Roles menus.
+
+The lib directory has the copyDashboardState.py utility to copy the dashboard
+configuration of one user, to another user.
+
+This ZenPack has been tested with a user that has the ZenCommon global role.  They are
+added to a group which has Administered Objects configured with the
+ZenOperator role.  The result is that the user ONLY sees those devices and
+Organizers for which Administered Objects are configured.  The user can Ack
+and Close events from those devices.  By default, you get to see the usual
+View stuff for such devices but you will NOT see any graphs (for the
+device or its components).  
+
+Graphs are deliverd by the RenderServer in $ZENHOME/Products/ZenRRD/RenderServer.py.  
+Although the user's role is augmented by the Administered Object, this is only for a 
+device and the RenderService is not of class Device - hence no role applies 
+(and View is required).  This is fixed by the allowAuthenticatedRender method which
+sets a ZEN_VIEW permission for the instance of class RenderServer, for any
+authenticated user.
+
+For the GoogleMaps portlet to work for restricted users, permissions need changing
+for GoogleMapsPortlet from ZEN_VIEW toZEN_COMMON in 
+$ZENHOME/Products/ZenWidgets/ZenossPortlets/ZenossPortlets.py. This is done in the
+updatePortletPermissions method.  Note that new permissions need registering, not
+just changing. 
+
+Also for GoogleMaps, methods for the Location class (which currently have no 
+security tags so default to View), need to have a security tag for ZEN_COMMON.  
+(You can add security tags in a ZenPack but you cannot override any that exist in Core code).
+
+
+Tests done on Zenoss 3.1 under Open SuSE 11.4
+
+Jane Curry
+jane.curry@skills-1st.co.uk
+
+July 11th, 2011
+

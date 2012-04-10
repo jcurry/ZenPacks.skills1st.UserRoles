@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:five="http://namespaces.zope.org/five">
+
+    <include package=".browser"/>
+
+    <interface
+        name="UserRoleSkin"
+        interface=".interfaces.IUserRoleSkin"
+        type="zope.publisher.interfaces.browser.IBrowserSkinType"
+    />
+
+    <browser:viewlet
+        name="Reports"
+        url="/zport/dmd/reports"
+        subviews="/zport/dmd/Reports"
+        weight="4"
+        manager="Products.ZenUI3.navigation.interfaces.ISecondaryNavigationMenu"
+        class="Products.ZenUI3.navigation.menuitem.SecondaryNavigationMenuItem"
+        permission="zenoss.View"
+        layer="ZenPacks.skills1st.UserRoles.interfaces.IUserRoleSkin"
+    />
+
+        <browser:viewlet
+            name="Basic"
+            url="/zport/dmd/Reports"
+            subviews="/zport/dmd/reports"
+            weight="0"
+            parentItem="Reports"
+            manager="Products.ZenUI3.navigation.interfaces.ISecondaryNavigationMenu"
+            class="Products.ZenUI3.navigation.menuitem.SecondaryNavigationMenuItem"
+            permission="zope2.Public"
+            layer="ZenPacks.skills1st.UserRoles.interfaces.IUserRoleSkin"
+        />
+
+        <browser:viewlet
+            name="Advanced"
+            url="http://www2.zenoss.com/no-zdi"
+            subviews="/zport/dmd/advancedReport"
+            weight="1"
+            parentItem="Reports"
+            manager="Products.ZenUI3.navigation.interfaces.ISecondaryNavigationMenu"
+            class="Products.ZenUI3.navigation.menuitem.SecondaryNavigationMenuItem"
+            permission="zope2.Public"
+            layer="ZenPacks.skills1st.UserRoles.interfaces.IUserRoleSkin"
+            target="_blank"
+            />
+
+<browser:page
+    template="./skins/ZenPacks.skills1st.UserRoles/roleOverview.pt"
+    name="roleOverview"
+    for="*"
+    permission="zenoss.View"
+    />
+
+<browser:page
+    template="./skins/ZenPacks.skills1st.UserRoles/deviceRoleManagement.pt"
+    name="deviceRoleManagement"
+    for="*"
+    permission="zenoss.View"
+    />
+
+    <!-- Import directRouter Directive -->
+    <include package="Products.ZenUtils.extdirect.zope" file="meta.zcml"/>
+
+
+    <!--
+        The name field in the adapter stanza must match with the parameter
+        to return Zuul.getFacade('this is the bit that must match', self.context)
+        in def _getFacade in routers.py
+
+        The provides field must match with an interface class name defined in
+        interfaces.py in this directory (ie. IupdateDevsFacade ).
+
+        The factory field must match with a facade class name defined in
+        facades.py in this directory (ie. updateDevsFacade ).
+
+    -->
+
+    <browser:directRouter
+        name="updateDevs_router"
+        for="*"
+        class=".routers.updateDevsRouter"
+        namespace="Zenoss.remote"
+        permission="zenoss.View"
+        />
+
+    <adapter
+        name="updateDevsAdapter"
+        provides=".interfaces.IupdateDevsFacade"
+        for="*"
+        factory=".facades.updateDevsFacade"
+        />
+
+
+
+</configure>
+

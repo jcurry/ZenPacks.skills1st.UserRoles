@@ -1,0 +1,173 @@
+ delids is ['cisco.skills-1st.co.uk'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at Cedar Chase> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <BridgeDevice at switch.skills-1st.co.uk> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at 10.0.0.94> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at adsl2.skills-1st.co.uk> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at wrt54g.skills-1st.co.uk> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at cisco.skills-1st.co.uk> 
+ mobj.primaryAq is <Device at cisco.skills-1st.co.uk> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at lotschy.skills-1st.co.uk> 
+ delids is ['/Cedar Chase'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at Cedar Chase> 
+ mobj.primaryAq is <Location at Cedar Chase> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is None 
+ delids is ['/Cedar Chase'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at Cedar Chase> 
+ mobj.primaryAq is <Location at Cedar Chase> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is None 
+ delids is ['/Cedar Chase'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at Cedar Chase> 
+ delids is ['/Cedar Chase'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at Cedar Chase> 
+ mobj.primaryAq is <Location at Cedar Chase> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <BridgeDevice at switch.skills-1st.co.uk> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at 10.0.0.94> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at adsl2.skills-1st.co.uk> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at wrt54g.skills-1st.co.uk> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at lotschy.skills-1st.co.uk> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at cisco.skills-1st.co.uk> 
+ delids is ['/Cedar Chase'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at Cedar Chase> 
+ mobj.primaryAq is <Location at Cedar Chase> 
+ delids is ['/Cedar Chase'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at Cedar Chase> 
+ mobj.primaryAq is <Location at Cedar Chase> 
+ delids is ['/Cedar Chase'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at Cedar Chase> 
+ mobj.primaryAq is <Location at Cedar Chase> 
+ delids is ['/Linux_group'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <DeviceGroup at Linux_group> 
+ mobj.primaryAq is <DeviceGroup at Linux_group> 
+ delids is ['/Cedar Chase'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <DeviceGroup at zen31_group> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at zen31.class.example.org> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at Cedar Chase> 
+ mobj.primaryAq is <Location at Cedar Chase> 
+ delids is ['ExampleDevice1'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <DeviceGroup at zen31_group> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at zen31.class.example.org> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <ExampleDevice at ExampleDevice1> 
+ mobj.primaryAq is <ExampleDevice at ExampleDevice1> 
+ delids is ['/Cedar Chase'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <DeviceGroup at zen31_group> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at zen31.class.example.org> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at Cedar Chase> 
+ mobj.primaryAq is <Location at Cedar Chase> 
+ delids is ['/Cedar Chase'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <DeviceGroup at zen31_group> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at zen31.class.example.org> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at Cedar Chase> 
+ mobj.primaryAq is <Location at Cedar Chase> 
+ delids is ['/Cedar Chase'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <DeviceGroup at zen31_group> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at zen31.class.example.org> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at Cedar Chase> 
+ mobj.primaryAq is <Location at Cedar Chase> 
+ delids is ['/eu'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <DeviceGroup at zen31_group> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at zen31.class.example.org> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at Cedar Chase> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <ExampleDevice at ExampleDevice1> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at cisco.skills-1st.co.uk> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at lotschy.skills-1st.co.uk> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at 10.0.0.94> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at adsl2.skills-1st.co.uk> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at wrt54g.skills-1st.co.uk> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <BridgeDevice at switch.skills-1st.co.uk> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at eu> 
+ mobj.primaryAq is <Location at eu> 
+ delids is ['/Cedar Chase', '/eu/west/1c'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <DeviceGroup at zen31_group> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at zen31.class.example.org> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at Cedar Chase> 
+ mobj.primaryAq is <Location at Cedar Chase> 
+ delids is ['/eu/west/1c'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <DeviceGroup at zen31_group> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at zen31.class.example.org> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at 1c> 
+ mobj.primaryAq is <Location at 1c> 
+ delids is ['ExampleDevice1'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <DeviceGroup at zen31_group> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at zen31.class.example.org> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at Cedar Chase> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <ExampleDevice at ExampleDevice1> 
+ mobj.primaryAq is <ExampleDevice at ExampleDevice1> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at cisco.skills-1st.co.uk> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at lotschy.skills-1st.co.uk> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at 10.0.0.94> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at adsl2.skills-1st.co.uk> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at wrt54g.skills-1st.co.uk> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <BridgeDevice at switch.skills-1st.co.uk> 
+ delids is ['/Cedar Chase'] 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <DeviceGroup at zen31_group> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Device at zen31.class.example.org> 
+ ar is <AdministrativeRole at c2group> 
+ mobj is <Location at Cedar Chase> 
+ mobj.primaryAq is <Location at Cedar Chase> 

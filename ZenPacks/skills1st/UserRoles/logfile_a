@@ -1,0 +1,908 @@
+ getAdministrativeRoles for lotschy.skills-1st.co.uk are [] 
+  getAdministrativeRoles for lotschy.skills-1st.co.uk are [] 
+  getAdministrativeRoles for lotschy.skills-1st.co.uk are [] 
+  getAdministrativeRoles for bino.skills-1st.co.uk are [] 
+  getAdministrativeRoles for lotschy.skills-1st.co.uk are [<AdministrativeRole at /zport/dmd/Devices/Server/Linux/devices/lotschy.skills-1st.co.uk/adminRoles/c1group>] 
+  role for device lotschy.skills-1st.co.uk is <AdministrativeRole at c1group>. New us is <GroupSettings at c1group> 
+  getAdministrativeRoles for rt38.class.example.org are [] 
+  getAdministrativeRoles for zen3.class.example.org are [] 
+  getAdministrativeRoles for zen31.class.example.org are [] 
+  getAdministrativeRoles for zenoss.class.example.org are [] 
+  getAdministrativeRoles for zenoss1.class.example.org are [] 
+  getAdministrativeRoles for deodar-mgt.skills-1st.co.uk are [] 
+  Roles for lotschy.skills-1st.co.uk are []. New user is c1group 
+  If clause: role for device lotschy.skills-1st.co.uk is []. New us is c1group 
+  Roles for zenoss.class.example.org are []. New user is c1group 
+  If clause: role for device zenoss.class.example.org is []. New us is c1group 
+  Roles for bino.skills-1st.co.uk are []. New user is c1group 
+  If clause: role for device bino.skills-1st.co.uk is []. New us is c1group 
+  Roles for lotschy.skills-1st.co.uk are ['c1group']. New user is c1group 
+  Roles for rt38.class.example.org are []. New user is c1group 
+  If clause: role for device rt38.class.example.org is []. New us is c1group 
+  Roles for zen3.class.example.org are []. New user is c1group 
+  If clause: role for device zen3.class.example.org is []. New us is c1group 
+  Roles for zen31.class.example.org are []. New user is c1group 
+  If clause: role for device zen31.class.example.org is []. New us is c1group 
+  Roles for zenoss.class.example.org are ['c1group']. New user is c1group 
+  Roles for zenoss1.class.example.org are []. New user is c1group 
+  If clause: role for device zenoss1.class.example.org is []. New us is c1group 
+  Roles for deodar-mgt.skills-1st.co.uk are []. New user is c1group 
+  If clause: role for device deodar-mgt.skills-1st.co.uk is []. New us is c1group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c1group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c1group 
+  roleNames for rt38.class.example.org are [] . New user is c1group 
+  In If - role for device rt38.class.example.org is []. New us is c1group 
+  roleNames for zen3.class.example.org are ['c1group'] . New user is c1group 
+  roleNames for zen31.class.example.org are [] . New user is c1group 
+  In If - role for device zen31.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  roleNames for zenoss1.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss1.class.example.org is []. New us is c1group 
+  roleNames for deodar-mgt.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device deodar-mgt.skills-1st.co.uk is []. New us is c1group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c1group 
+  roleNames for lotschy.skills-1st.co.uk are ['c1group'] . New user is c1group 
+  roleNames for rt38.class.example.org are [] . New user is c1group 
+  In If - role for device rt38.class.example.org is []. New us is c1group 
+  roleNames for zen3.class.example.org are [] . New user is c1group 
+  In If - role for device zen3.class.example.org is []. New us is c1group 
+  roleNames for zen31.class.example.org are [] . New user is c1group 
+  In If - role for device zen31.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are ['c1group'] . New user is c1group 
+  roleNames for zenoss1.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss1.class.example.org is []. New us is c1group 
+  roleNames for deodar-mgt.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device deodar-mgt.skills-1st.co.uk is []. New us is c1group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c1group 
+  roleNames for bino.skills-1st.co.uk are ['c1group'] . New user is c1group 
+  roleNames for lotschy.skills-1st.co.uk are ['c1group'] . New user is c1group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c1group 
+  In base object (including device) clause - role for object testSystem is []. New us is c1group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  In base object (including device) clause - role for object CedarChase is []. New us is c1group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c1group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c1group 
+  roleNames for lotschy.skills-1st.co.uk are ['c1group'] . New user is c1group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c1group 
+  In base object (including device) clause - role for object Linux_group is []. New us is c1group 
+  roleNames for bino.skills-1st.co.uk are ['c1group'] . New user is c1group 
+  roleNames for lotschy.skills-1st.co.uk are ['c1group'] . New user is c1group 
+  roleNames for rt38.class.example.org are [] . New user is c1group 
+  In If - role for device rt38.class.example.org is []. New us is c1group 
+  roleNames for zen3.class.example.org are [] . New user is c1group 
+  In If - role for device zen3.class.example.org is []. New us is c1group 
+  roleNames for zen31.class.example.org are [] . New user is c1group 
+  In If - role for device zen31.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are ['c1group'] . New user is c1group 
+  roleNames for zenoss1.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss1.class.example.org is []. New us is c1group 
+  roleNames for deodar-mgt.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device deodar-mgt.skills-1st.co.uk is []. New us is c1group 
+  In base object (including device) clause - role for object Linux_group is []. New us is c1group 
+  roleNames for zenoss1.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss1.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  roleNames for rt38.class.example.org are [] . New user is c1group 
+  In If - role for device rt38.class.example.org is []. New us is c1group 
+  roleNames for zen3.class.example.org are [] . New user is c1group 
+  In If - role for device zen3.class.example.org is []. New us is c1group 
+  roleNames for deodar-mgt.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device deodar-mgt.skills-1st.co.uk is []. New us is c1group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c1group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c1group 
+  roleNames for zen31.class.example.org are [] . New user is c1group 
+  In If - role for device zen31.class.example.org is []. New us is c1group 
+  In base object (including device) clause - role for object Linux_group is []. New us is c1group 
+  roleNames for zenoss1.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss1.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  roleNames for rt38.class.example.org are [] . New user is c1group 
+  In If - role for device rt38.class.example.org is []. New us is c1group 
+  roleNames for zen3.class.example.org are [] . New user is c1group 
+  In If - role for device zen3.class.example.org is []. New us is c1group 
+  roleNames for deodar-mgt.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device deodar-mgt.skills-1st.co.uk is []. New us is c1group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c1group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c1group 
+  roleNames for zen31.class.example.org are [] . New user is c1group 
+  In If - role for device zen31.class.example.org is []. New us is c1group 
+  In base object (including device) clause - role for object Linux_group is []. New us is c1group 
+  roleNames for zenoss1.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss1.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  roleNames for rt38.class.example.org are [] . New user is c1group 
+  In If - role for device rt38.class.example.org is []. New us is c1group 
+  roleNames for zen3.class.example.org are [] . New user is c1group 
+  In If - role for device zen3.class.example.org is []. New us is c1group 
+  roleNames for deodar-mgt.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device deodar-mgt.skills-1st.co.uk is []. New us is c1group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c1group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c1group 
+  roleNames for zen31.class.example.org are [] . New user is c1group 
+  In If - role for device zen31.class.example.org is []. New us is c1group 
+  In base object (including device) clause - role for object Linux_group is []. New us is c1group 
+  roleNames for zenoss1.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss1.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  roleNames for rt38.class.example.org are [] . New user is c1group 
+  In If - role for device rt38.class.example.org is []. New us is c1group 
+  roleNames for zen3.class.example.org are [] . New user is c1group 
+  In If - role for device zen3.class.example.org is []. New us is c1group 
+  roleNames for deodar-mgt.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device deodar-mgt.skills-1st.co.uk is []. New us is c1group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c1group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c1group 
+  roleNames for zen31.class.example.org are [] . New user is c1group 
+  In If - role for device zen31.class.example.org is []. New us is c1group 
+  In base object (including device) clause - role for object Linux_group is []. New us is c1group 
+  roleNames for zenoss1.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss1.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  roleNames for rt38.class.example.org are [] . New user is c1group 
+  In If - role for device rt38.class.example.org is []. New us is c1group 
+  roleNames for zen3.class.example.org are [] . New user is c1group 
+  In If - role for device zen3.class.example.org is []. New us is c1group 
+  roleNames for deodar-mgt.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device deodar-mgt.skills-1st.co.uk is []. New us is c1group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c1group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c1group 
+  roleNames for zen31.class.example.org are [] . New user is c1group 
+  In If - role for device zen31.class.example.org is []. New us is c1group 
+  In base object (including device) clause - role for object Linux_group is []. New us is c2 
+  roleNames for zenoss1.class.example.org are [] . New user is c2 
+  In If - role for device zenoss1.class.example.org is []. New us is c2 
+  roleNames for zenoss.class.example.org are [] . New user is c2 
+  In If - role for device zenoss.class.example.org is []. New us is c2 
+  roleNames for rt38.class.example.org are [] . New user is c2 
+  In If - role for device rt38.class.example.org is []. New us is c2 
+  roleNames for zen3.class.example.org are [] . New user is c2 
+  In If - role for device zen3.class.example.org is []. New us is c2 
+  roleNames for deodar-mgt.skills-1st.co.uk are [] . New user is c2 
+  In If - role for device deodar-mgt.skills-1st.co.uk is []. New us is c2 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c2 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c2 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2 
+  roleNames for zen31.class.example.org are [] . New user is c2 
+  In If - role for device zen31.class.example.org is []. New us is c2 
+  In base object (including device) clause - role for object Linux_group is ['c2']. New us is c1 
+  roleNames for zenoss1.class.example.org are ['c2'] . New user is c1 
+  In If - role for device zenoss1.class.example.org is ['c2']. New us is c1 
+  roleNames for zenoss.class.example.org are ['c2'] . New user is c1 
+  In If - role for device zenoss.class.example.org is ['c2']. New us is c1 
+  roleNames for rt38.class.example.org are ['c2'] . New user is c1 
+  In If - role for device rt38.class.example.org is ['c2']. New us is c1 
+  roleNames for zen3.class.example.org are ['c2'] . New user is c1 
+  In If - role for device zen3.class.example.org is ['c2']. New us is c1 
+  roleNames for deodar-mgt.skills-1st.co.uk are ['c2'] . New user is c1 
+  In If - role for device deodar-mgt.skills-1st.co.uk is ['c2']. New us is c1 
+  roleNames for bino.skills-1st.co.uk are ['c2'] . New user is c1 
+  In If - role for device bino.skills-1st.co.uk is ['c2']. New us is c1 
+  roleNames for lotschy.skills-1st.co.uk are ['c2'] . New user is c1 
+  In If - role for device lotschy.skills-1st.co.uk is ['c2']. New us is c1 
+  roleNames for zen31.class.example.org are ['c2'] . New user is c1 
+  In If - role for device zen31.class.example.org is ['c2']. New us is c1 
+  In base object (including device) clause - role for object Linux_group is ['c1', 'c2']. New us is c1group 
+  roleNames for zenoss1.class.example.org are ['c1', 'c2'] . New user is c1group 
+  In If - role for device zenoss1.class.example.org is ['c1', 'c2']. New us is c1group 
+  roleNames for zenoss.class.example.org are ['c1', 'c2'] . New user is c1group 
+  In If - role for device zenoss.class.example.org is ['c1', 'c2']. New us is c1group 
+  roleNames for rt38.class.example.org are ['c1', 'c2'] . New user is c1group 
+  In If - role for device rt38.class.example.org is ['c1', 'c2']. New us is c1group 
+  roleNames for zen3.class.example.org are ['c1', 'c2'] . New user is c1group 
+  In If - role for device zen3.class.example.org is ['c1', 'c2']. New us is c1group 
+  roleNames for deodar-mgt.skills-1st.co.uk are ['c1', 'c2'] . New user is c1group 
+  In If - role for device deodar-mgt.skills-1st.co.uk is ['c1', 'c2']. New us is c1group 
+  roleNames for bino.skills-1st.co.uk are ['c1', 'c2'] . New user is c1group 
+  In If - role for device bino.skills-1st.co.uk is ['c1', 'c2']. New us is c1group 
+  roleNames for lotschy.skills-1st.co.uk are ['c1', 'c2'] . New user is c1group 
+  In If - role for device lotschy.skills-1st.co.uk is ['c1', 'c2']. New us is c1group 
+  roleNames for zen31.class.example.org are ['c1', 'c2'] . New user is c1group 
+  In If - role for device zen31.class.example.org is ['c1', 'c2']. New us is c1group 
+  In base object (including device) clause - role for object VM-land is []. New us is c1group 
+  roleNames for win2003.class.example.org are [] . New user is c1group 
+  In If - role for device win2003.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are ['c1', 'c2'] . New user is c1group 
+  In If - role for device zenoss.class.example.org is ['c1', 'c2']. New us is c1group 
+  roleNames for zen3.class.example.org are ['c1', 'c2'] . New user is c1group 
+  In If - role for device zen3.class.example.org is ['c1', 'c2']. New us is c1group 
+  roleNames for group-100-r1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r1.class.example.org is []. New us is c1group 
+  roleNames for group-100-r2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r2.class.example.org is []. New us is c1group 
+  roleNames for group-100-r3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r3.class.example.org is []. New us is c1group 
+  roleNames for group-100-b1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-b1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c2.class.example.org is []. New us is c1group 
+  roleNames for group-100-c3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c3.class.example.org is []. New us is c1group 
+  roleNames for group-100-a1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-a1.class.example.org is []. New us is c1group 
+  roleNames for group-100-serv1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-serv1.class.example.org is []. New us is c1group 
+  In base object (including device) clause - role for object Linux_group is ['c1', 'c2']. New us is c1group 
+  roleNames for zenoss1.class.example.org are ['c1', 'c2'] . New user is c1group 
+  In If - role for device zenoss1.class.example.org is ['c1', 'c2']. New us is c1group 
+  roleNames for zenoss.class.example.org are ['c1', 'c2'] . New user is c1group 
+  In If - role for device zenoss.class.example.org is ['c1', 'c2']. New us is c1group 
+  roleNames for rt38.class.example.org are ['c1', 'c2'] . New user is c1group 
+  In If - role for device rt38.class.example.org is ['c1', 'c2']. New us is c1group 
+  roleNames for zen3.class.example.org are ['c1', 'c2'] . New user is c1group 
+  In If - role for device zen3.class.example.org is ['c1', 'c2']. New us is c1group 
+  roleNames for deodar-mgt.skills-1st.co.uk are ['c1', 'c2'] . New user is c1group 
+  In If - role for device deodar-mgt.skills-1st.co.uk is ['c1', 'c2']. New us is c1group 
+  roleNames for bino.skills-1st.co.uk are ['c1', 'c2'] . New user is c1group 
+  In If - role for device bino.skills-1st.co.uk is ['c1', 'c2']. New us is c1group 
+  roleNames for lotschy.skills-1st.co.uk are ['c1', 'c2'] . New user is c1group 
+  In If - role for device lotschy.skills-1st.co.uk is ['c1', 'c2']. New us is c1group 
+  roleNames for zen31.class.example.org are ['c1', 'c2'] . New user is c1group 
+  In If - role for device zen31.class.example.org is ['c1', 'c2']. New us is c1group 
+  In base object (including device) clause - role for object VM-land is []. New us is c1group 
+  roleNames for win2003.class.example.org are [] . New user is c1group 
+  In If - role for device win2003.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are ['c1', 'c1group', 'c2'] . New user is c1group 
+  roleNames for zen3.class.example.org are ['c1', 'c1group', 'c2'] . New user is c1group 
+  roleNames for group-100-r1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r1.class.example.org is []. New us is c1group 
+  roleNames for group-100-r2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r2.class.example.org is []. New us is c1group 
+  roleNames for group-100-r3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r3.class.example.org is []. New us is c1group 
+  roleNames for group-100-b1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-b1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c2.class.example.org is []. New us is c1group 
+  roleNames for group-100-c3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c3.class.example.org is []. New us is c1group 
+  roleNames for group-100-a1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-a1.class.example.org is []. New us is c1group 
+  roleNames for group-100-serv1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-serv1.class.example.org is []. New us is c1group 
+  In base object (including device) clause - role for object VM-land is []. New us is c1group 
+  roleNames for win2003.class.example.org are [] . New user is c1group 
+  In If - role for device win2003.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  roleNames for zen3.class.example.org are [] . New user is c1group 
+  In If - role for device zen3.class.example.org is []. New us is c1group 
+  roleNames for group-100-r1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r1.class.example.org is []. New us is c1group 
+  roleNames for group-100-r2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r2.class.example.org is []. New us is c1group 
+  roleNames for group-100-r3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r3.class.example.org is []. New us is c1group 
+  roleNames for group-100-b1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-b1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c2.class.example.org is []. New us is c1group 
+  roleNames for group-100-c3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c3.class.example.org is []. New us is c1group 
+  roleNames for group-100-a1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-a1.class.example.org is []. New us is c1group 
+  roleNames for group-100-serv1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-serv1.class.example.org is []. New us is c1group 
+  In base object (including device) clause - role for object Linux_group is []. New us is c2 
+  roleNames for zenoss1.class.example.org are [] . New user is c2 
+  In If - role for device zenoss1.class.example.org is []. New us is c2 
+  roleNames for zenoss.class.example.org are ['c1group'] . New user is c2 
+  In If - role for device zenoss.class.example.org is ['c1group']. New us is c2 
+  roleNames for rt38.class.example.org are [] . New user is c2 
+  In If - role for device rt38.class.example.org is []. New us is c2 
+  roleNames for zen3.class.example.org are ['c1group'] . New user is c2 
+  In If - role for device zen3.class.example.org is ['c1group']. New us is c2 
+  roleNames for deodar-mgt.skills-1st.co.uk are [] . New user is c2 
+  In If - role for device deodar-mgt.skills-1st.co.uk is []. New us is c2 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c2 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c2 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2 
+  roleNames for zen31.class.example.org are [] . New user is c2 
+  In If - role for device zen31.class.example.org is []. New us is c2 
+  In base object (including device) clause - role for object VM-land is []. New us is c1group 
+  roleNames for group-100-r1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r1.class.example.org is []. New us is c1group 
+  roleNames for group-100-r2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r2.class.example.org is []. New us is c1group 
+  roleNames for group-100-r3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r3.class.example.org is []. New us is c1group 
+  roleNames for group-100-serv1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-serv1.class.example.org is []. New us is c1group 
+  roleNames for zen3.class.example.org are [] . New user is c1group 
+  In If - role for device zen3.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  roleNames for win2003.class.example.org are [] . New user is c1group 
+  In If - role for device win2003.class.example.org is []. New us is c1group 
+  roleNames for group-100-b1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-b1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c2.class.example.org is []. New us is c1group 
+  roleNames for group-100-c3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c3.class.example.org is []. New us is c1group 
+  roleNames for group-100-a1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-a1.class.example.org is []. New us is c1group 
+  In base object (including device) clause - role for object Linux_group is []. New us is c2 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c2 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c2 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2 
+  roleNames for rt38.class.example.org are [] . New user is c2 
+  In If - role for device rt38.class.example.org is []. New us is c2 
+  roleNames for zen3.class.example.org are ['c1group'] . New user is c2 
+  In If - role for device zen3.class.example.org is ['c1group']. New us is c2 
+  roleNames for zen31.class.example.org are [] . New user is c2 
+  In If - role for device zen31.class.example.org is []. New us is c2 
+  roleNames for zenoss.class.example.org are ['c1group'] . New user is c2 
+  In If - role for device zenoss.class.example.org is ['c1group']. New us is c2 
+  roleNames for zenoss1.class.example.org are [] . New user is c2 
+  In If - role for device zenoss1.class.example.org is []. New us is c2 
+  roleNames for deodar-mgt.skills-1st.co.uk are [] . New user is c2 
+  In If - role for device deodar-mgt.skills-1st.co.uk is []. New us is c2 
+  In base object (including device) clause - role for object Systems is []. New us is student 
+  roleNames for group-100-r1.class.example.org are ['c1group'] . New user is student 
+  In If - role for device group-100-r1.class.example.org is ['c1group']. New us is student 
+  roleNames for group-100-r2.class.example.org are ['c1group'] . New user is student 
+  In If - role for device group-100-r2.class.example.org is ['c1group']. New us is student 
+  roleNames for group-100-r3.class.example.org are ['c1group'] . New user is student 
+  In If - role for device group-100-r3.class.example.org is ['c1group']. New us is student 
+  roleNames for group-100-serv1.class.example.org are ['c1group'] . New user is student 
+  In If - role for device group-100-serv1.class.example.org is ['c1group']. New us is student 
+  roleNames for lotschy.skills-1st.co.uk are ['c2'] . New user is student 
+  In If - role for device lotschy.skills-1st.co.uk is ['c2']. New us is student 
+  roleNames for zen3.class.example.org are ['c1group', 'c2'] . New user is student 
+  In If - role for device zen3.class.example.org is ['c1group', 'c2']. New us is student 
+  roleNames for zenoss.class.example.org are ['c1group', 'c2'] . New user is student 
+  In If - role for device zenoss.class.example.org is ['c1group', 'c2']. New us is student 
+  roleNames for group-100-b1.class.example.org are ['c1group'] . New user is student 
+  In If - role for device group-100-b1.class.example.org is ['c1group']. New us is student 
+  roleNames for group-100-c1.class.example.org are ['c1group'] . New user is student 
+  In If - role for device group-100-c1.class.example.org is ['c1group']. New us is student 
+  roleNames for group-100-c2.class.example.org are ['c1group'] . New user is student 
+  In If - role for device group-100-c2.class.example.org is ['c1group']. New us is student 
+  roleNames for group-100-c3.class.example.org are ['c1group'] . New user is student 
+  In If - role for device group-100-c3.class.example.org is ['c1group']. New us is student 
+  roleNames for group-100-a1.class.example.org are ['c1group'] . New user is student 
+  In If - role for device group-100-a1.class.example.org is ['c1group']. New us is student 
+  In base object (including device) clause - role for object testSystem is []. New us is c2 
+  roleNames for zenoss.class.example.org are ['c1group', 'c2'] . New user is c2 
+  roleNames for lotschy.skills-1st.co.uk are ['c2'] . New user is c2 
+  In base object (including device) clause - role for object VM-land is []. New us is c1group 
+  roleNames for group-100-r1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r1.class.example.org is []. New us is c1group 
+  roleNames for group-100-r2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r2.class.example.org is []. New us is c1group 
+  roleNames for group-100-r3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r3.class.example.org is []. New us is c1group 
+  roleNames for group-100-serv1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-serv1.class.example.org is []. New us is c1group 
+  roleNames for zen3.class.example.org are [] . New user is c1group 
+  In If - role for device zen3.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  roleNames for win2003.class.example.org are [] . New user is c1group 
+  In If - role for device win2003.class.example.org is []. New us is c1group 
+  roleNames for group-100-b1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-b1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c2.class.example.org is []. New us is c1group 
+  roleNames for group-100-c3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c3.class.example.org is []. New us is c1group 
+  roleNames for group-100-a1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-a1.class.example.org is []. New us is c1group 
+  In base object (including device) clause - role for object lotschy.skills-1st.co.uk is []. New us is c1group 
+  In base object (including device) clause - role for object HTTP is []. New us is c1group 
+  roleNames for www.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device www.skills-1st.co.uk is []. New us is c1group 
+  In base object (including device) clause - role for object testGroup is []. New us is c1group 
+  roleNames for lotschy.skills-1st.co.uk are ['c1group'] . New user is c1group 
+  roleNames for zenoss.class.example.org are ['c1group'] . New user is c1group 
+  roleNames for win2003.class.example.org are ['c1group'] . New user is c1group 
+  In base object (including device) clause - role for object testSystem is []. New us is c1group 
+  roleNames for lotschy.skills-1st.co.uk are ['c1group'] . New user is c1group 
+  roleNames for zenoss.class.example.org are ['c1group'] . New user is c1group 
+  In base object (including device) clause - role for object VM-land is []. New us is c1group 
+  roleNames for group-100-r1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r1.class.example.org is []. New us is c1group 
+  roleNames for group-100-r2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r2.class.example.org is []. New us is c1group 
+  roleNames for group-100-r3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r3.class.example.org is []. New us is c1group 
+  roleNames for group-100-serv1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-serv1.class.example.org is []. New us is c1group 
+  roleNames for zen3.class.example.org are [] . New user is c1group 
+  In If - role for device zen3.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  roleNames for win2003.class.example.org are [] . New user is c1group 
+  In If - role for device win2003.class.example.org is []. New us is c1group 
+  roleNames for group-100-b1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-b1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c2.class.example.org is []. New us is c1group 
+  roleNames for group-100-c3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c3.class.example.org is []. New us is c1group 
+  roleNames for group-100-a1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-a1.class.example.org is []. New us is c1group 
+  In base object (including device) clause - role for object VM-land is []. New us is c1group 
+  roleNames for group-100-r1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r1.class.example.org is []. New us is c1group 
+  roleNames for group-100-r2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r2.class.example.org is []. New us is c1group 
+  roleNames for group-100-r3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r3.class.example.org is []. New us is c1group 
+  roleNames for group-100-serv1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-serv1.class.example.org is []. New us is c1group 
+  roleNames for zen3.class.example.org are [] . New user is c1group 
+  In If - role for device zen3.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  roleNames for win2003.class.example.org are [] . New user is c1group 
+  In If - role for device win2003.class.example.org is []. New us is c1group 
+  roleNames for group-100-b1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-b1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c2.class.example.org is []. New us is c1group 
+  roleNames for group-100-c3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c3.class.example.org is []. New us is c1group 
+  roleNames for group-100-a1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-a1.class.example.org is []. New us is c1group 
+  In base object (including device) clause - role for object VM-land is []. New us is c1group 
+  roleNames for group-100-r1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r1.class.example.org is []. New us is c1group 
+  roleNames for group-100-r2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r2.class.example.org is []. New us is c1group 
+  roleNames for group-100-r3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r3.class.example.org is []. New us is c1group 
+  roleNames for group-100-serv1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-serv1.class.example.org is []. New us is c1group 
+  roleNames for zen3.class.example.org are [] . New user is c1group 
+  In If - role for device zen3.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  roleNames for win2003.class.example.org are [] . New user is c1group 
+  In If - role for device win2003.class.example.org is []. New us is c1group 
+  roleNames for group-100-b1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-b1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c2.class.example.org is []. New us is c1group 
+  roleNames for group-100-c3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c3.class.example.org is []. New us is c1group 
+  roleNames for group-100-a1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-a1.class.example.org is []. New us is c1group 
+  In base object (including device) clause - role for object lotschy_sys is []. New us is c1group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c1group 
+  roleNames for zen3.class.example.org are [] . New user is c1group 
+  In If - role for device zen3.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  In base object (including device) clause - role for object Linux_group is []. New us is c1group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c1group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c1group 
+  roleNames for rt38.class.example.org are [] . New user is c1group 
+  In If - role for device rt38.class.example.org is []. New us is c1group 
+  roleNames for zen3.class.example.org are [] . New user is c1group 
+  In If - role for device zen3.class.example.org is []. New us is c1group 
+  roleNames for zen31.class.example.org are [] . New user is c1group 
+  In If - role for device zen31.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  roleNames for zenoss1.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss1.class.example.org is []. New us is c1group 
+  roleNames for deodar-mgt.skills-1st.co.uk are [] . New user is c1group 
+  In If - role for device deodar-mgt.skills-1st.co.uk is []. New us is c1group 
+  In base object (including device) clause - role for object VM-land is []. New us is c1group 
+  roleNames for group-100-r1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r1.class.example.org is []. New us is c1group 
+  roleNames for group-100-r2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r2.class.example.org is []. New us is c1group 
+  roleNames for group-100-r3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-r3.class.example.org is []. New us is c1group 
+  roleNames for group-100-serv1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-serv1.class.example.org is []. New us is c1group 
+  roleNames for zen3.class.example.org are [] . New user is c1group 
+  In If - role for device zen3.class.example.org is []. New us is c1group 
+  roleNames for zenoss.class.example.org are [] . New user is c1group 
+  In If - role for device zenoss.class.example.org is []. New us is c1group 
+  roleNames for win2003.class.example.org are [] . New user is c1group 
+  In If - role for device win2003.class.example.org is []. New us is c1group 
+  roleNames for group-100-b1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-b1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c1.class.example.org is []. New us is c1group 
+  roleNames for group-100-c2.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c2.class.example.org is []. New us is c1group 
+  roleNames for group-100-c3.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-c3.class.example.org is []. New us is c1group 
+  roleNames for group-100-a1.class.example.org are [] . New user is c1group 
+  In If - role for device group-100-a1.class.example.org is []. New us is c1group 
+  In base object (including device) clause - role for object CedarChase is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object BridgeMIB is []. New us is c2 
+  roleNames for group-100-s1.class.example.org are [] . New user is c2 
+  In If - role for device group-100-s1.class.example.org is []. New us is c2 
+  roleNames for group-100-s2.class.example.org are [] . New user is c2 
+  In If - role for device group-100-s2.class.example.org is []. New us is c2 
+  roleNames for switch.skills-1st.co.uk are [] . New user is c2 
+  In If - role for device switch.skills-1st.co.uk is []. New us is c2 
+  In base object (including device) clause - role for object Linux_group is []. New us is c2group 
+  roleNames for bino.skills-1st.co.uk are ['c2group'] . New user is c2group 
+  roleNames for lotschy.skills-1st.co.uk are ['c2group'] . New user is c2group 
+  roleNames for zenoss.class.example.org are ['c1group'] . New user is c2group 
+  In If - role for device zenoss.class.example.org is ['c1group']. New us is c2group 
+  roleNames for zen31.class.example.org are [] . New user is c2group 
+  In If - role for device zen31.class.example.org is []. New us is c2group 
+  roleNames for rt38.class.example.org are [] . New user is c2group 
+  In If - role for device rt38.class.example.org is []. New us is c2group 
+  roleNames for zen3.class.example.org are ['c1group'] . New user is c2group 
+  In If - role for device zen3.class.example.org is ['c1group']. New us is c2group 
+  roleNames for deodar-mgt.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device deodar-mgt.skills-1st.co.uk is []. New us is c2group 
+  roleNames for zenoss1.class.example.org are [] . New user is c2group 
+  In If - role for device zenoss1.class.example.org is []. New us is c2group 
+  In base object (including device) clause - role for object Raddle is []. New us is c2group 
+  roleNames for group-100-serv1.class.example.org are ['c1group'] . New user is c2group 
+  In If - role for device group-100-serv1.class.example.org is ['c1group']. New us is c2group 
+  roleNames for group-100-b1.class.example.org are ['c1group'] . New user is c2group 
+  In If - role for device group-100-b1.class.example.org is ['c1group']. New us is c2group 
+  roleNames for group-100-c1.class.example.org are ['c1group'] . New user is c2group 
+  In If - role for device group-100-c1.class.example.org is ['c1group']. New us is c2group 
+  roleNames for group-100-c2.class.example.org are ['c1group'] . New user is c2group 
+  In If - role for device group-100-c2.class.example.org is ['c1group']. New us is c2group 
+  roleNames for group-100-c3.class.example.org are ['c1group'] . New user is c2group 
+  In If - role for device group-100-c3.class.example.org is ['c1group']. New us is c2group 
+  roleNames for group-100-a1.class.example.org are ['c1group'] . New user is c2group 
+  In If - role for device group-100-a1.class.example.org is ['c1group']. New us is c2group 
+  roleNames for group-100-r1.class.example.org are ['c1group'] . New user is c2group 
+  In If - role for device group-100-r1.class.example.org is ['c1group']. New us is c2group 
+  roleNames for group-100-r2.class.example.org are ['c1group'] . New user is c2group 
+  In If - role for device group-100-r2.class.example.org is ['c1group']. New us is c2group 
+  roleNames for group-100-r3.class.example.org are ['c1group'] . New user is c2group 
+  In If - role for device group-100-r3.class.example.org is ['c1group']. New us is c2group 
+  In base object (including device) clause - role for object Windows is []. New us is c2 
+  roleNames for win2003.class.example.org are ['c1group'] . New user is c2 
+  In If - role for device win2003.class.example.org is ['c1group']. New us is c2 
+  In base object (including device) clause - role for object cisco.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object group-100-serv1.class.example.org is ['c1group', 'c2group']. New us is c3 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are ['c2group'] . New user is c2group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are ['c2group'] . New user is c2group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are ['c2group'] . New user is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are ['c2group'] . New user is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are ['c2group'] . New user is c2group 
+  roleNames for bino.skills-1st.co.uk are ['c2group'] . New user is c2group 
+  roleNames for lotschy.skills-1st.co.uk are ['c2group'] . New user is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are ['c2group'] . New user is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are ['c2group'] . New user is c2group 
+  roleNames for bino.skills-1st.co.uk are ['c2group'] . New user is c2group 
+  roleNames for lotschy.skills-1st.co.uk are ['c2group'] . New user is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are ['c2group'] . New user is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for bino.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device bino.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for ExampleDevice1 are [] . New user is c2group 
+  In If - role for device ExampleDevice1 is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for 10.0.0.94 are [] . New user is c2group 
+  In If - role for device 10.0.0.94 is []. New us is c2group 
+  roleNames for adsl2.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device adsl2.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  roleNames for switch.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device switch.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for 10.0.0.94 are [] . New user is c2group 
+  In If - role for device 10.0.0.94 is []. New us is c2group 
+  roleNames for adsl2.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device adsl2.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  roleNames for switch.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device switch.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for ExampleDevice1 are [] . New user is c2group 
+  In If - role for device ExampleDevice1 is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for 10.0.0.94 are [] . New user is c2group 
+  In If - role for device 10.0.0.94 is []. New us is c2group 
+  roleNames for adsl2.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device adsl2.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  roleNames for switch.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device switch.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for 10.0.0.94 are [] . New user is c2group 
+  In If - role for device 10.0.0.94 is []. New us is c2group 
+  roleNames for adsl2.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device adsl2.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  roleNames for switch.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device switch.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for 10.0.0.94 are [] . New user is c2group 
+  In If - role for device 10.0.0.94 is []. New us is c2group 
+  roleNames for adsl2.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device adsl2.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  roleNames for switch.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device switch.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for 10.0.0.94 are [] . New user is c2group 
+  In If - role for device 10.0.0.94 is []. New us is c2group 
+  roleNames for adsl2.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device adsl2.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  roleNames for switch.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device switch.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for ExampleDevice1 are [] . New user is c2group 
+  In If - role for device ExampleDevice1 is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for 10.0.0.94 are [] . New user is c2group 
+  In If - role for device 10.0.0.94 is []. New us is c2group 
+  roleNames for adsl2.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device adsl2.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  roleNames for switch.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device switch.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for ExampleDevice1 are [] . New user is c2group 
+  In If - role for device ExampleDevice1 is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for 10.0.0.94 are [] . New user is c2group 
+  In If - role for device 10.0.0.94 is []. New us is c2group 
+  roleNames for adsl2.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device adsl2.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  roleNames for switch.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device switch.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for ExampleDevice1 are [] . New user is c2group 
+  In If - role for device ExampleDevice1 is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for 10.0.0.94 are [] . New user is c2group 
+  In If - role for device 10.0.0.94 is []. New us is c2group 
+  roleNames for adsl2.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device adsl2.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  roleNames for switch.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device switch.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for ExampleDevice1 are [] . New user is c2group 
+  In If - role for device ExampleDevice1 is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for 10.0.0.94 are [] . New user is c2group 
+  In If - role for device 10.0.0.94 is []. New us is c2group 
+  roleNames for adsl2.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device adsl2.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  roleNames for switch.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device switch.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for ExampleDevice1 are [] . New user is c2group 
+  In If - role for device ExampleDevice1 is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for 10.0.0.94 are [] . New user is c2group 
+  In If - role for device 10.0.0.94 is []. New us is c2group 
+  roleNames for adsl2.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device adsl2.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  roleNames for switch.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device switch.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object eu is []. New us is c2group 
+  roleNames for aws-i-facecc8c are [] . New user is c2group 
+  In If - role for device aws-i-facecc8c is []. New us is c2group 
+  roleNames for aws-i-0e1a1878 are [] . New user is c2group 
+  In If - role for device aws-i-0e1a1878 is []. New us is c2group 
+  roleNames for aws-i-fc09108a are [] . New user is c2group 
+  In If - role for device aws-i-fc09108a is []. New us is c2group 
+  roleNames for aws-i-48d5d73e are [] . New user is c2group 
+  In If - role for device aws-i-48d5d73e is []. New us is c2group 
+  In base object (including device) clause - role for object 1c is []. New us is c2group 
+  roleNames for aws-i-facecc8c are ['c2group'] . New user is c2group 
+  roleNames for aws-i-0e1a1878 are ['c2group'] . New user is c2group 
+  roleNames for aws-i-fc09108a are ['c2group'] . New user is c2group 
+  roleNames for aws-i-48d5d73e are ['c2group'] . New user is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for ExampleDevice1 are [] . New user is c2group 
+  In If - role for device ExampleDevice1 is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for 10.0.0.94 are [] . New user is c2group 
+  In If - role for device 10.0.0.94 is []. New us is c2group 
+  roleNames for adsl2.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device adsl2.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  roleNames for switch.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device switch.skills-1st.co.uk is []. New us is c2group 
+  In base object (including device) clause - role for object Cedar Chase is []. New us is c2group 
+  roleNames for ExampleDevice1 are [] . New user is c2group 
+  In If - role for device ExampleDevice1 is []. New us is c2group 
+  roleNames for cisco.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device cisco.skills-1st.co.uk is []. New us is c2group 
+  roleNames for lotschy.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device lotschy.skills-1st.co.uk is []. New us is c2group 
+  roleNames for 10.0.0.94 are [] . New user is c2group 
+  In If - role for device 10.0.0.94 is []. New us is c2group 
+  roleNames for adsl2.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device adsl2.skills-1st.co.uk is []. New us is c2group 
+  roleNames for wrt54g.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device wrt54g.skills-1st.co.uk is []. New us is c2group 
+  roleNames for switch.skills-1st.co.uk are [] . New user is c2group 
+  In If - role for device switch.skills-1st.co.uk is []. New us is c2group 
+ 

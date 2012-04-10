@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:five="http://namespaces.zope.org/five">
+
+    <include package="Products.Five" file="meta.zcml"/>
+    <include package="zope.viewlet" file="meta.zcml"/>
+    <include package="Products.ZenModel" file="permissions.zcml"/>
+
+    <browser:viewlet
+        name="Reports"
+        url="/zport/dmd/reports"
+        subviews="/zport/dmd/Reports"
+        weight="4"
+        manager="Products.ZenUI3.navigation.interfaces.IPrimaryNavigationMenu"
+        class="Products.ZenUI3.navigation.menuitem.PrimaryNavigationMenuItem"
+        permission="zenoss.View"
+        layer="Products.ZenUI3.navigation.interfaces.IZenossNav"
+        />
+
+        <browser:viewlet
+            name="Basic"
+            url="/zport/dmd/Reports"
+            subviews="/zport/dmd/reports"
+            weight="0"
+            parentItem="Reports"
+            manager="Products.ZenUI3.navigation.interfaces.ISecondaryNavigationMenu"
+            class="Products.ZenUI3.navigation.menuitem.SecondaryNavigationMenuItem"
+            permission="zope2.Public"
+            layer="Products.ZenUI3.navigation.interfaces.IZenossNav"
+        />
+
+</configure>
+

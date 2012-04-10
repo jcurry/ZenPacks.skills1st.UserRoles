@@ -1,0 +1,20 @@
+These page template files are all to help implement a Role menu in addition to the standard
+Administer menus.
+
+The ZenPack __init__.py has the new role tabs commented out but don't just remove these files
+unless you also comment out the UserGroupRoletab definition in __init__.py.
+
+All the dialog_ files define the page templates for the new role drop-down menus.  These are
+basically the same as the Administrator drop-down menus but could be modified in the future.  The
+menus themselves are defined in objects/objects.xml so, again, do not delete any of these
+dialog files unless you also eliminate the menus from objects/objects.xml.
+ 
+There are issues for a user to change their alerting rules because of the test at the beginning of
+$ZENHOME/Products/ZenEvents/skins/zenevents/editActionRule.pt which checks for getFieldList.  This
+method requires a global View permission (which a restricted user doesn't have), so editActionRule.pt
+is overriden in this ZenPack with the test commented out.
+
+Jane Curry
+jane.curry@skills-1st.co.uk
+
+September 21st, 2011

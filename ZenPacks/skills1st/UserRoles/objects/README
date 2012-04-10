@@ -1,0 +1,10 @@
+objects.xml defines 2 new dropdown menus, AdministratorRole_list and
+AdministratorRoleObjects_list.  They are used from the optional, new Role menus (which
+are commented out by default).
+
+The menus use the various dialog_.... page template files to implement the menus.
+
+Jane Curry
+jane.curry@skills-1st.co.uk
+
+June 24th, 2011

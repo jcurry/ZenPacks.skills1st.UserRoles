@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configure xmlns="http://namespaces.zope.org/browser">
+
+    <!-- This is an override to the standard $ZENHOME/ZenEvents/skins/zenevents/editActionRule.py
+         The standard file has a line near the top that calls getFieldList (in EventManagerBase.py)
+         which has View permission set.  This version simply comments out those lines.  Otherwise
+         you don't see existing alerting rules.
+    -->
+
+    <resourceDirectory
+        name="UserRoles"
+        directory="resources"
+        />
+
+    <page
+        name="editActionRule"
+        for="Products.ZenEvents.ActionRule.ActionRule"
+        template="templates/editActionRule.pt"
+        permission="zenoss.View"
+        />
+
+
+    <!-- Define a new entry on the Action "gear cog wheel" menu
+         for the device list page
+    -->
+    <viewlet
+        name="update-devices-menu-item"
+        paths="/++resource++UserRoles/js/update_organizer_devices.js"
+        weight="10"
+        manager="Products.ZenUI3.browser.interfaces.IJavaScriptSrcManager"
+        class="Products.ZenUI3.browser.javascript.JavaScriptSrcBundleViewlet"
+        permission="zope2.Public"
+        />
+
+ 
+
+    </configure>
+

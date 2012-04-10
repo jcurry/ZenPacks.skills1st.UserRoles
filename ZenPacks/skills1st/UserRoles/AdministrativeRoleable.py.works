@@ -1,0 +1,153 @@
+###########################################################################
+#
+# This program is part of Zenoss Core, an open source monitoring platform.
+# Copyright (C) 2007, Zenoss Inc.
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License version 2 as published by
+# the Free Software Foundation.
+#
+# For complete information please visit: http://www.zenoss.com/oss/
+#
+###########################################################################
+"""
+AdministrativeRoleable.py
+
+Created by Marc Irlandez on 2007-04-05.
+Modified by Jane Curry - 15/6/2011
+"""
+
+import types
+from AccessControl import ClassSecurityInfo
+from Products.ZenModel.AdministrativeRole import AdministrativeRole
+from Globals import InitializeClass
+from ZenossSecurity import *
+from Products.ZenWidgets import messaging
+
+class AdministrativeRoleable:
+    
+    security = ClassSecurityInfo()
+
+    security.declareProtected(ZEN_ADMINISTRATORS_VIEW, 
+        'getAdministrativeRoles')
+    def getAdministrativeRoles(self):
+        "Get the Admin Roles on this device"
+        return self.adminRoles.objectValuesAll()
+
+    security.declareProtected(ZEN_ADMINISTRATORS_EDIT, 
+        'manage_addAdministrativeRole')
+    def manage_addAdministrativeRole(self, newId=None, REQUEST=None):
+        """Add a Admin Role to this device
+        """
+        logfile_a=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_a', 'a')
+        us = self.ZenUsers.getUserSettings(newId)
+	# Check whether role already exists for this object. Only add if not already there.
+	selfRoles = [s.id for s in self.adminRoles() ]
+	if not (us.id in selfRoles):
+            AdministrativeRole(us, self)
+            logfile_a.write(' In base object (including device) clause - role for object %s is %s. New us is %s \n ' % (self.id, selfRoles, us.id))
+	# If the object is not a device then apply the admin role to all devices within the organizer
+	if not hasattr(self,'deviceClass'):
+    	    for dev in self.getSubDevices():
+		roleNames = [r.id for r in dev.adminRoles() ]
+		logfile_a.write(' roleNames for %s are %s . New user is %s \n ' % (dev.id, roleNames, us.id))
+		# Check whether role already exists for this device. Only add if not already there.
+		if not (us.id in roleNames):
+                    AdministrativeRole(us, dev)
+                    logfile_a.write(' In If - role for device %s is %s. New us is %s \n ' % (dev.id, roleNames, us.id))
+        self.setAdminLocalRoles()
+        if REQUEST:
+            if us:
+                messaging.IMessageSender(self).sendToBrowser(
+                    'Admin Role Added',
+                    'The %s administrative role has been added.' % newId
+                )
+            return self.callZenScreen(REQUEST)
+        logfile_a.close()
+
+    security.declareProtected(ZEN_ADMINISTRATORS_EDIT,
+        'manage_editAdministrativeRoles')
+    def manage_editAdministrativeRoles(self, ids=(), role=(), 
+                                        level=(), REQUEST=None):
+        """Edit list of admin roles.
+        """
+        logfile_e=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_e', 'a')
+        if type(ids) in types.StringTypes:
+            ids = [ids]
+            role = [role]
+            level = [level]
+	logfile_e.write(' object is %s ids is %s role is %s level is %s \n' % (self.id, ids, role, level ) )
+        for i, id in enumerate(ids):
+            ar = self.adminRoles._getOb(id)
+            ar.update(role[i], level[i])
+	# If the object is not a device then apply the admin role to all devices within the organizer
+	    if not hasattr(self,'deviceClass'):
+    	        for dev in self.getSubDevices():
+		# Check that this user / group has an Administered Object for this device
+                    subar = dev.adminRoles._getOb(id, None)
+		    if subar is not None:
+		        logfile_e.write('device is %s  id is %s subar is %s role is %s level is %s \n ' % (dev.id, id, subar, role[i], level[i] ) )
+                        subar.update(role[i], level[i])
+        self.setAdminLocalRoles()
+        if REQUEST:
+            messaging.IMessageSender(self).sendToBrowser(
+                'Admin Roles Updated',
+                ('The following administrative roles have been updated: '
+                 '%s' % ", ".join(ids))
+            )
+            return self.callZenScreen(REQUEST)
+        logfile_e.close()
+
+
+    security.declareProtected(ZEN_ADMINISTRATORS_EDIT,
+        'manage_deleteAdministrativeRole')
+    def manage_deleteAdministrativeRole(self, delids=(), REQUEST=None):
+        """Delete a admin role to this device
+	"""
+        logfile_d=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_d', 'a')
+        if type(delids) in types.StringTypes:
+            delids = [delids]
+        for userid in delids:
+            ar = self.adminRoles._getOb(userid, None)
+	    logfile_d.write(' device is %s userid is %s ar is %s \n ' % ( self.id, userid, ar) )
+            if ar is not None: ar.delete()
+            self.manage_delLocalRoles((userid,))
+	# If the object is not a device then delete the admin role from all devices within the organizer
+	    if not hasattr(self,'deviceClass'):
+    	        for dev in self.getSubDevices():
+		    logfile_d.write('device is %s \n ' % (dev.id) )
+                    subar = dev.adminRoles._getOb(userid, None)
+		    logfile_d.write('subar is %s \n' % (subar) )
+		    if subar is not None: 
+	    	        logfile_d.write(' roleNames for %s are %s . Delete user is %s \n ' % (dev.id, subar, userid))
+		        subar.delete()
+                    dev.manage_delLocalRoles((userid,))
+        self.setAdminLocalRoles()
+        if REQUEST:
+            if delids:
+                messaging.IMessageSender(self).sendToBrowser(
+                    'Admin Roles Deleted',
+                    ('The following administrative roles have been deleted: '
+                     '%s' % ", ".join(delids))
+                )
+            return self.callZenScreen(REQUEST)
+        logfile_d.close()
+
+    def manage_listAdministrativeRoles(self):
+        """List the user and their roles on an object"""
+        return [ (ar.id, (ar.role,)) for ar in self.adminRoles() ]
+
+    
+    def setAdminLocalRoles(self):
+        """Hook for setting permissions"""
+        logfile=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile', 'a')
+        logfile.write('Entering setAdminLocalRoles \n')
+	logfile.write(' Object is %s \n' % (self.id) )
+        logfile.write('Exiting setAdminLocalRoles \n')
+        logfile.close()
+
+
+        pass
+
+
+InitializeClass(AdministrativeRoleable)
