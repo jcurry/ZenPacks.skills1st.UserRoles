@@ -5,7 +5,7 @@
 NAME = "ZenPacks.skills1st.UserRoles"
 VERSION = "1.0.1"
 AUTHOR = "Jane Curry"
-LICENSE = ""
+LICENSE = "GPLv2"
 NAMESPACE_PACKAGES = ['ZenPacks', 'ZenPacks.skills1st']
 PACKAGES = ['ZenPacks', 'ZenPacks.skills1st', 'ZenPacks.skills1st.UserRoles']
 INSTALL_REQUIRES = []
