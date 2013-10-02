@@ -4,6 +4,9 @@ import Globals
 import logging
 log = logging.getLogger('zen.ZenPack')
 
+import os
+zenhome = os.environ['ZENHOME']
+logfileBaseName = zenhome + '/log'
 
 class updateDevsRouter(DirectRouter):
 
@@ -19,7 +22,7 @@ class updateDevsRouter(DirectRouter):
     #   in the javascript file update_organizer_devices.js .
 
     def updateDevsFunc(self):
-        logfile_rou=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_rou', 'a')
+        logfile_rou=open(logfileBaseName+'/logfile_rou', 'a')
         logfile_rou.write('In updateDevsFunc \n')
         facade = self._getFacade()
 

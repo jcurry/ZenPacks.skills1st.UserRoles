@@ -48,3 +48,5 @@ jane.curry@skills-1st.co.uk
 
 July 11th, 2011
 
+Updated Oct 2nd 2013
+Changed hard-coded logfiles so they are all relative to $ZENHOME/log

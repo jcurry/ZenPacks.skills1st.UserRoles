@@ -73,6 +73,10 @@ log = logging.getLogger('zen.ZenPack')
 import Globals
 import os.path
 
+import os
+zenhome = os.environ['ZENHOME']
+logfileBaseName = zenhome + '/log'
+
 import types
 from AccessControl import ClassSecurityInfo
 from Products.ZenModel.AdministrativeRole import AdministrativeRole
@@ -170,7 +174,7 @@ class ZenPack(ZenPackBase):
 
         log.info('Adding ZenOperator role')
 
-        #logfile_i=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_i', 'a')
+        #logfile_i=open(logfileBaseName+'/logfile_i', 'a')
 	dmd = self.dmd
         #logfile_i.write(' In install code. zport is %s  \n ' % (zport))
 	# This adds ZenOperator to the roles in http://<your zenoss>:8080/zport/manage_access
@@ -211,7 +215,7 @@ class ZenPack(ZenPackBase):
 
         log.info('Adding ZenCommon role')
 
-        #logfile_i=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_i', 'a')
+        #logfile_i=open(logfileBaseName+'/logfile_i', 'a')
 	dmd = self.dmd
         #logfile_i.write(' In install code. zport is %s  \n ' % (zport))
 	# This adds ZenCommon to the roles in http://<your zenoss>:8080/zport/manage_access
@@ -232,7 +236,7 @@ class ZenPack(ZenPackBase):
         #logfile_i.close()
 
     def removeZenOperatorRole(self, zport):
-        #logfile_r=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_r', 'a')
+        #logfile_r=open(logfileBaseName+'/logfile_r', 'a')
 	dmd = self.dmd
         rms = (dmd.getPhysicalRoot().acl_users.roleManager,
                     zport.acl_users.roleManager)
@@ -250,7 +254,7 @@ class ZenPack(ZenPackBase):
         #logfile_r.close()
 
     def removeZenCommonRole(self, zport):
-        #logfile_r=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_r', 'a')
+        #logfile_r=open(logfileBaseName+'/logfile_r', 'a')
 	dmd = self.dmd
         rms = (dmd.getPhysicalRoot().acl_users.roleManager,
                     zport.acl_users.roleManager)
@@ -337,7 +341,7 @@ def manage_addRole(self, newId=None, REQUEST=None):
     # Note that this code actually associates users and groups with organizers and devices, NOT roles directly
     # Many of the method names are confusing in that they have "Role" in them
 
-    logfile_a=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_a', 'a')
+    logfile_a=open(logfileBaseName+'/logfile_a', 'a')
     us = self.ZenUsers.getUserSettings(newId)
     # Check whether role already exists for this object. Only add if not already there.
     selfRoles = [s.id for s in self.adminRoles() ]
@@ -378,7 +382,7 @@ def manage_editRoles(self, ids=(), role=(), level=(), REQUEST=None):
     #  roles on a user / group page then it will apply whatever that panel shows (so just changing
     #  an Organizer will NOT propagate to individual devices)
 
-    logfile_e=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_e', 'a')
+    logfile_e=open(logfileBaseName+'/logfile_e', 'a')
     if type(ids) in types.StringTypes:
         ids = [ids]
         role = [role]
@@ -415,7 +419,7 @@ def manage_deleteRole(self, delids=(), REQUEST=None):
     # Note that this code actually associates users and groups with organizers and devices, NOT roles directly
     # Many of the method names are confusing in that they have "Role" in them
 
-    logfile_d=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_d', 'a')
+    logfile_d=open(logfileBaseName+'/logfile_d', 'a')
     if type(delids) in types.StringTypes:
         delids = [delids]
 	logfile_d.write(' delids is %s \n' % (delids))
@@ -456,7 +460,7 @@ def manage_deleteRole(self, delids=(), REQUEST=None):
 
 def manage_deleteAdministrativeRole_UserSettings(self, delids=(), REQUEST=None):
     "Delete admin role from this device"
-    logfile_u=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_u', 'a')
+    logfile_u=open(logfileBaseName+'/logfile_u', 'a')
     if type(delids) in types.StringTypes:
         delids = [delids]
     logfile_u.write(' delids is %s \n' % (delids))
@@ -525,7 +529,7 @@ def check_ar_for_removed_device(self):
     """ If device being removed has adminRole with level of 2
             then remove adminRole from device as well as removing device from organizer
     """
-    logfile_c=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_c', 'a')
+    logfile_c=open(logfileBaseName+'/logfile_c', 'a')
     logfile_c.write(' Going into check_ar_for_removed_device with self = %s \n' % (self.id))
     for ar in self.adminRoles():
         # if the adminRole level is set to 2, this indicates the ar was added as part of an organizer
@@ -543,7 +547,7 @@ def update_organizer_devices_with_adminRole(self):
     """
     # adminroles() actually delivers a user or group - not actually a role
 
-    logfile_dar=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_dar', 'a')
+    logfile_dar=open(logfileBaseName+'/logfile_dar', 'a')
     try:
         # Check that this really is an organizer
         organizername = self.getOrganizerName()
@@ -567,7 +571,7 @@ def update_organizer_devices_with_adminRole(self):
 
 def setLocalRoles(self):
     """Hook for setting permissions"""
-    #logfile=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile', 'a')
+    #logfile=open(logfileBaseName+'/logfile', 'a')
     #logfile.write('Entering setAdminLocalRoles \n')
     #logfile.write(' Object is %s \n' % (self.id) )
     #logfile.write('Exiting setAdminLocalRoles \n')
@@ -600,7 +604,7 @@ DeviceFacade.removeDevices = removeDevices
 def manage_deleteGroups(self, groupids=(), REQUEST=None):
     """ Delete a zenoss group from the system
     """
-    #logfile_g=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_g', 'a')
+    #logfile_g=open(logfileBaseName+'/logfile_g', 'a')
     gm = self.acl_users.groupManager
     if type(groupids) in types.StringTypes:
         groupids = [groupids]

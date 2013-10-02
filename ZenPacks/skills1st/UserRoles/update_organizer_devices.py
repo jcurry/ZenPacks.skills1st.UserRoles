@@ -18,6 +18,11 @@ log = logging.getLogger('zen.ZenPack')
 import Globals
 import os.path
 
+import os
+zenhome = os.environ['ZENHOME']
+logfileBaseName = zenhome + '/log'
+
+
 import types
 from AccessControl import ClassSecurityInfo
 from Products.ZenModel.AdministrativeRole import AdministrativeRole
@@ -42,7 +47,7 @@ def update_organizer_devices_with_adminRole(self):
     """
     # adminroles() actually delivers a user or group - not actually a role
 
-    logfile_dar=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_dar', 'a')
+    logfile_dar=open(logfileBaseName+'/logfile_dar', 'a')
     for ar in self.adminRoles():
         id = ar.id
         role = ar.role

@@ -17,6 +17,10 @@ Created by Marc Irlandez on 2007-04-05.
 Modified by Jane Curry - 15/6/2011
 """
 
+import os
+zenhome = os.environ['ZENHOME']
+logfileBaseName = zenhome + '/log'
+
 import types
 from AccessControl import ClassSecurityInfo
 from Products.ZenModel.AdministrativeRole import AdministrativeRole
@@ -39,7 +43,7 @@ class AdministrativeRoleable:
     def manage_addAdministrativeRole(self, newId=None, REQUEST=None):
         """Add a Admin Role to this device
         """
-        logfile_a=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_a', 'a')
+        logfile_a=open(logfileBaseName+'/logfile_a', 'a')
         us = self.ZenUsers.getUserSettings(newId)
 	# Check whether role already exists for this object. Only add if not already there.
 	selfRoles = [s.id for s in self.adminRoles() ]
@@ -71,7 +75,7 @@ class AdministrativeRoleable:
                                         level=(), REQUEST=None):
         """Edit list of admin roles.
         """
-        logfile_e=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_e', 'a')
+        logfile_e=open(logfileBaseName+'/logfile_e', 'a')
         if type(ids) in types.StringTypes:
             ids = [ids]
             role = [role]
@@ -104,7 +108,7 @@ class AdministrativeRoleable:
     def manage_deleteAdministrativeRole(self, delids=(), REQUEST=None):
         """Delete a admin role to this device
 	"""
-        logfile_d=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile_d', 'a')
+        logfile_d=open(logfileBaseName+'/logfile_d', 'a')
         if type(delids) in types.StringTypes:
             delids = [delids]
         for userid in delids:
@@ -140,7 +144,7 @@ class AdministrativeRoleable:
     
     def setAdminLocalRoles(self):
         """Hook for setting permissions"""
-        logfile=open('/usr/local/zenoss/zenoss/local/ZenPacks.skills1st.UserRoles/ZenPacks/skills1st/UserRoles/logfile', 'a')
+        logfile=open(logfileBaseName+'/logfile', 'a')
         logfile.write('Entering setAdminLocalRoles \n')
 	logfile.write(' Object is %s \n' % (self.id) )
         logfile.write('Exiting setAdminLocalRoles \n')
