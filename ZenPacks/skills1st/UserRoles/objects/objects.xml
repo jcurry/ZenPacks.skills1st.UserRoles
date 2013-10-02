@@ -19,6 +19,15 @@ True
 <property type="lines" id="permissions" mode="w" >
 ('Change Admin Objects',)
 </property>
+<property type="lines" id="banned_classes" mode="w" >
+()
+</property>
+<property type="lines" id="allowed_classes" mode="w" >
+()
+</property>
+<property type="lines" id="banned_ids" mode="w" >
+()
+</property>
 <property type="boolean" id="isdialog" mode="w" >
 True
 </property>
@@ -41,6 +50,15 @@ True
 </property>
 <property type="lines" id="permissions" mode="w" >
 ('Change Admin Objects',)
+</property>
+<property type="lines" id="banned_classes" mode="w" >
+()
+</property>
+<property type="lines" id="allowed_classes" mode="w" >
+()
+</property>
+<property type="lines" id="banned_ids" mode="w" >
+()
 </property>
 <property type="boolean" id="isdialog" mode="w" >
 True
@@ -65,6 +83,15 @@ True
 <property type="lines" id="permissions" mode="w" >
 ('Change Admin Objects',)
 </property>
+<property type="lines" id="banned_classes" mode="w" >
+()
+</property>
+<property type="lines" id="allowed_classes" mode="w" >
+()
+</property>
+<property type="lines" id="banned_ids" mode="w" >
+()
+</property>
 <property type="boolean" id="isdialog" mode="w" >
 True
 </property>
@@ -87,6 +114,15 @@ True
 </property>
 <property type="lines" id="permissions" mode="w" >
 ('Change Admin Objects',)
+</property>
+<property type="lines" id="banned_classes" mode="w" >
+()
+</property>
+<property type="lines" id="allowed_classes" mode="w" >
+()
+</property>
+<property type="lines" id="banned_ids" mode="w" >
+()
 </property>
 <property type="boolean" id="isdialog" mode="w" >
 True
@@ -111,6 +147,15 @@ True
 <property type="lines" id="permissions" mode="w" >
 ('Change Admin Objects',)
 </property>
+<property type="lines" id="banned_classes" mode="w" >
+()
+</property>
+<property type="lines" id="allowed_classes" mode="w" >
+()
+</property>
+<property type="lines" id="banned_ids" mode="w" >
+()
+</property>
 <property type="boolean" id="isdialog" mode="w" >
 True
 </property>
@@ -133,6 +178,15 @@ True
 </property>
 <property type="lines" id="permissions" mode="w" >
 ('Change Admin Objects',)
+</property>
+<property type="lines" id="banned_classes" mode="w" >
+()
+</property>
+<property type="lines" id="allowed_classes" mode="w" >
+()
+</property>
+<property type="lines" id="banned_ids" mode="w" >
+()
 </property>
 <property type="boolean" id="isdialog" mode="w" >
 True
@@ -162,6 +216,15 @@ True
 <property type="lines" id="permissions" mode="w" >
 ('Manage DMD',)
 </property>
+<property type="lines" id="banned_classes" mode="w" >
+()
+</property>
+<property type="lines" id="allowed_classes" mode="w" >
+()
+</property>
+<property type="lines" id="banned_ids" mode="w" >
+()
+</property>
 <property type="boolean" id="isdialog" mode="w" >
 True
 </property>
@@ -184,6 +247,15 @@ True
 </property>
 <property type="lines" id="permissions" mode="w" >
 ('Manage DMD',)
+</property>
+<property type="lines" id="banned_classes" mode="w" >
+()
+</property>
+<property type="lines" id="allowed_classes" mode="w" >
+()
+</property>
+<property type="lines" id="banned_ids" mode="w" >
+()
 </property>
 <property type="boolean" id="isdialog" mode="w" >
 True

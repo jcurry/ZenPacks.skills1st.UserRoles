@@ -390,9 +390,7 @@ def manage_editRoles(self, ids=(), role=(), level=(), REQUEST=None):
     logfile_e.write(' object is %s ids is %s role is %s level is %s \n' % (self.id, ids, role, level ) )
     for i, id in enumerate(ids):
         ar = self.adminRoles._getOb(id)
-        #### update method in 4.2 + does not want level parameter
-        #ar.update(role[i], level[i])
-        ar.update(role[i])
+        ar.update(role[i], level[i])
     # If the object is not a device then apply the admin role to all devices within the organizer
         if not hasattr(self,'deviceClass'):
             for dev in self.getSubDevices():
@@ -400,11 +398,7 @@ def manage_editRoles(self, ids=(), role=(), level=(), REQUEST=None):
                 subar = dev.adminRoles._getOb(id, None)
                 if subar is not None:
                     logfile_e.write('device is %s  id is %s subar is %s role is %s level is %s \n ' % (dev.id, id, subar, role[i], level[i] ) )
-
-
-                    #### update method in 4.2 + does not want level parameter
-                    #subar.update(role[i], level[i])
-                    subar.update(role[i])
+                    subar.update(role[i], level[i])
     # setAdminLocalRoles() is a null function - simply "pass"
     self.setAdminLocalRoles()
     if REQUEST:

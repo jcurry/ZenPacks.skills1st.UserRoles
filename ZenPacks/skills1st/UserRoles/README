@@ -50,3 +50,5 @@ July 11th, 2011
 
 Updated Oct 2nd 2013
 Changed hard-coded logfiles so they are all relative to $ZENHOME/log
+Changed calls to update ar - it now only takes a role parameter - do not specify a level parameter
+
