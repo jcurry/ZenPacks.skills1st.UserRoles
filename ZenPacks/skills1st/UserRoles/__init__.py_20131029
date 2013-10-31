@@ -501,44 +501,35 @@ from Products.ZenModel.DeviceGroup import DeviceGroup
 from Products.ZenModel.System import System
 from Products.ZenModel.Location import Location
 from Products.ZenModel.Device import Device
-from zope.event import notify
-from Products.ZenMessaging.ChangeEvents.events import ObjectAddedToOrganizerEvent, ObjectRemovedFromOrganizerEvent
-from Products.Zuul.decorators import info
 
 
-@info
 def removeDevices(self, uids, organizer):
     # Resolve target if a path
     if isinstance(organizer, basestring):
         organizer = self._getObject(organizer)
     assert isinstance(organizer, DeviceOrganizer)
-    devs = map(self._getObject, uids)
-    removed = []
+    organizername = organizer.getOrganizerName()
+    devs = imap(self._getObject, uids)
     if isinstance(organizer, DeviceGroup):
         for dev in devs:
-            oldGroupNames = dev.getDeviceGroupNames()
-            newGroupNames = self._removeOrganizer(organizer, list(oldGroupNames))
-            if oldGroupNames != newGroupNames:
-                dev.setGroups(newGroupNames)
-                notify(ObjectRemovedFromOrganizerEvent(dev, organizer))
-                removed.append(dev)
+            groups = dev.getDeviceGroupNames()
+
+            newGroups = self._excludePath(organizername, groups)
+            if newGroups != groups:
+                dev.setGroups(newGroups)
                 check_ar_for_removed_device(dev)
     elif isinstance(organizer, System):
         for dev in devs:
-            oldSystemNames = dev.getSystemNames()
-            newSystemNames = self._removeOrganizer(organizer, list(oldSystemNames))
-            if newSystemNames != oldSystemNames:
-                dev.setSystems(newSystemNames)
-                notify(ObjectRemovedFromOrganizerEvent(dev, organizer))
-                removed.append(dev)
+            systems = dev.getSystemNames()
+
+            newSystems = self._excludePath(organizername, systems)
+            if newSystems != systems:
+                dev.setSystems(newSystems)
                 check_ar_for_removed_device(dev)
     elif isinstance(organizer, Location):
         for dev in devs:
             dev.setLocation(None)
-            notify(ObjectRemovedFromOrganizerEvent(dev, organizer))
-            removed.append(dev)
             check_ar_for_removed_device(dev)
-    return removed
 
 def check_ar_for_removed_device(self):
     """ If device being removed has adminRole with level of 2
