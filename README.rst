@@ -73,6 +73,7 @@ Download the appropriate package for your Zenoss version from the list
 below.
 
 * Zenoss 3.0+ `Latest Package for Python 2.6`_
+* Zenoss 4.0+ `Latest Package for Python 2.7`_
 
 Installation
 ============
@@ -123,6 +124,7 @@ Screenshots
 .. External References Below. Nothing Below This Line Should Be Rendered
 
 .. _Latest Package for Python 2.6: https://github.com/jcurry/ZenPacks.skills1st.UserRoles/blob/master/dist/ZenPacks.skills1st.UserRoles-1.0.1-py2.6.egg?raw=true
+.. _Latest Package for Python 2.7: https://github.com/jcurry/ZenPacks.skills1st.UserRoles/blob/master/dist/ZenPacks.skills1st.UserRoles-1.1.1-py2.7.egg?raw=true
 
 .. |myScreenshot| image:: http://github.com/jcurry/ZenPacks.skills1st.UserRoles/raw/master/screenshots/myScreenshot.jpg
 
