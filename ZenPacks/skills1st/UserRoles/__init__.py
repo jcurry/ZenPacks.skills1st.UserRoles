@@ -550,7 +550,7 @@ def check_ar_for_removed_device(self):
         # if the adminRole level is set to 2, this indicates the ar was added as part of an organizer
         #   so delete the ar when you remove the device from an organizer
         # 4.x does not have level attribute so check first
-        if hastttr(ar,'level'):
+        if hasattr(ar,'level'):
             if ar.level == 2:
                 self.manage_deleteAdministrativeRole(ar.id)
     logfile_c.close()
@@ -572,7 +572,7 @@ def update_organizer_devices_with_adminRole(self):
             id = ar.id
             role = ar.role
             # 4.x does not have level attribute so check first
-            if hastttr(ar,'level'):
+            if hasattr(ar,'level'):
                 level = ar.level
             else:
                 level = 0
