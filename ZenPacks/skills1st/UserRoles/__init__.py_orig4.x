@@ -13,12 +13,11 @@
 #  The role is deleted again when the ZenPack is removed.
 #
 # A second role,ZEN_COMMON is also created / removed.  This role ONLY has 
-#  the ZEN_COMMON permission.
+#  the ZEN_COMMON premission.
 #
 # Administered Objects configurations for Organizers (device classes, locations,
 #  systems and groups) are not propagated to the contained devices, in the standard code.
-#  This is logged as a bug in ticket 7848 changed to ZEN-968 and closed Jan 2014.
-#  In Zenoss 5.1.9 propagation DOES work for device classes but still not Location, Groups or Systems.
+#  This is logged as a bug in ticket 7848.
 #
 #  This ZenPack monkey patches (overrides) the methods in 
 #   $ZENHOME/Products/ZenModel/AdministrativeRoleable.py so that propagation of
@@ -69,7 +68,7 @@
 ##########################################################################
 
 import logging
-log = logging.getLogger('zen.ZenPack.skills1st.UserRoles')
+log = logging.getLogger('zen.ZenPack')
 
 import Globals
 import os.path
@@ -88,6 +87,7 @@ from Products.ZenWidgets import messaging
 from Products.ZenModel.ZenPack import ZenPackBase
 
 from AccessControl import Permissions
+from Products.ZenModel.UserSettings import *
 from Products.ZenModel.DeviceOrganizer import DeviceOrganizer
 from Products.ZenModel.Location import Location
 from Products.ZenModel.System import System
@@ -104,8 +104,6 @@ if os.path.isdir(skinsDir):
 # Next few lines sets up the new permissions list
 # updatePortletPermissions method (see later) then registers those permissions
 # This affects what you see in Advanced -> Portlets GUI
-# In 5.1.9 there is no Advanced -> Portlets GUI
-# portlet is a dict with sourcepath, permission, id and title as fields
 #
 new_portlets = []
 for portlet in ZenossPortlets.portlets:
