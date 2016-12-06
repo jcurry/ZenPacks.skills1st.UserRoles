@@ -40,6 +40,8 @@
 #  nasty inconsistent state.  The manage_deleteGroups method at the end of
 #  this ZenPack monkey patches the code in UserSettings so that group
 #  deletion also clears up the relationships with Administerd Objects.
+#  As of December 2016, this ticket appears to have disappeared entirely but the code
+#      appears unchanged.
 #
 #  There are various logging hooks around the code - all are currently
 #   commented out.
@@ -62,6 +64,8 @@
 #   This is now done by self.allowAuthenticatedRender(app.zport.RenderServer)
 #        in this file
 #
+# Zenoss 5.x does not use RenderServer - RenderServer.py exists but is a null class
+#  so references to RenderServer are commented out in this version.
 
 # This program can be used under the GNU General Public License version 2
 # You can find full information here: http://www.zenoss.com/oss
@@ -81,8 +85,8 @@ logfileBaseName = zenhome + '/log'
 import types
 from AccessControl import ClassSecurityInfo
 from Products.ZenModel.AdministrativeRole import AdministrativeRole
-from Products.ZenModel.UserSettings  import *
-from Globals import InitializeClass
+#from Products.ZenModel.UserSettings  import *
+#from Globals import InitializeClass
 from Products.ZenModel.ZenossSecurity import *
 from Products.ZenWidgets import messaging
 from Products.ZenModel.ZenPack import ZenPackBase
@@ -90,6 +94,7 @@ from Products.ZenModel.ZenPack import ZenPackBase
 from AccessControl import Permissions
 from Products.ZenModel.DeviceOrganizer import DeviceOrganizer
 from Products.ZenModel.Location import Location
+from Products.ZenModel.DeviceGroup import DeviceGroup
 from Products.ZenModel.System import System
 from Products.ZenWidgets.ZenossPortlets import ZenossPortlets
 
@@ -125,7 +130,7 @@ class ZenPack(ZenPackBase):
     # Fix security tag limitation on RenderServer - default permission is VIEW
     #  this changes it to any Authenticated user
     #
-        self.allowAuthenticatedRender(app.zport.RenderServer)
+        #self.allowAuthenticatedRender(app.zport.RenderServer)
         self.allowAuthenticatedReport(app.zport.ReportServer)
 
     # Fix portlet permissions so that GoogleMapsPortlet has ZEN_Common
@@ -159,9 +164,11 @@ class ZenPack(ZenPackBase):
 
         ZenPackBase.remove( self, app, leaveObjects=False )
 
+    """
     def allowAuthenticatedRender(self, renderServer):
         log.info('Allowing authenticated access to RenderServer')
         renderServer.manage_permission(ZEN_VIEW, ['Authenticated'], 0)
+    """
 
     def allowAuthenticatedReport(self, reportServer):
         log.info('Allowing authenticated access to reportServer')
@@ -177,13 +184,13 @@ class ZenPack(ZenPackBase):
         log.info('Adding ZenOperator role')
 
         #logfile_i=open(logfileBaseName+'/logfile_i', 'a')
-	dmd = self.dmd
+    	dmd = self.dmd
         #logfile_i.write(' In install code. zport is %s  \n ' % (zport))
-	# This adds ZenOperator to the roles in http://<your zenoss>:8080/zport/manage_access
+	    # This adds ZenOperator to the roles in http://<your zenoss>:8080/zport/manage_access
         if not ZEN_OP_ROLE in zport.__ac_roles__:
             zport.__ac_roles__ += (ZEN_OP_ROLE,)
 
-	# Next few lines adds the ZenOperator role to the roleManager
+	    # Next few lines adds the ZenOperator role to the roleManager
         rms = (dmd.getPhysicalRoot().acl_users.roleManager,
                     zport.acl_users.roleManager)
         for rm in rms:
@@ -216,15 +223,14 @@ class ZenPack(ZenPackBase):
     def addZenCommonRole(self, zport):
 
         log.info('Adding ZenCommon role')
-
         #logfile_i=open(logfileBaseName+'/logfile_i', 'a')
-	dmd = self.dmd
+        dmd = self.dmd
         #logfile_i.write(' In install code. zport is %s  \n ' % (zport))
-	# This adds ZenCommon to the roles in http://<your zenoss>:8080/zport/manage_access
+	    # This adds ZenCommon to the roles in http://<your zenoss>:8080/zport/manage_access
         if not ZEN_COMMON_ROLE in zport.__ac_roles__:
             zport.__ac_roles__ += (ZEN_COMMON_ROLE,)
 
-	# Next few lines adds the ZenCommon role to the roleManager
+	    # Next few lines adds the ZenCommon role to the roleManager
         rms = (dmd.getPhysicalRoot().acl_users.roleManager,
                     zport.acl_users.roleManager)
         for rm in rms:
@@ -239,16 +245,16 @@ class ZenPack(ZenPackBase):
 
     def removeZenOperatorRole(self, zport):
         #logfile_r=open(logfileBaseName+'/logfile_r', 'a')
-	dmd = self.dmd
+        dmd = self.dmd
         rms = (dmd.getPhysicalRoot().acl_users.roleManager,
                     zport.acl_users.roleManager)
-	# This removes the role from the roleManager
-	# If a user has this role, it is simply removed from them
+	    # This removes the role from the roleManager
+	    # If a user has this role, it is simply removed from them
         for rm in rms:
             #logfile_r.write(' rm.listRoleIds() is %s  \n ' % (rm.listRoleIds()))
             if ZEN_OP_ROLE in rm.listRoleIds():
                 rm.removeRole(ZEN_OP_ROLE)
-	#This removes the role from the manage_access list
+	    #This removes the role from the manage_access list
         if ZEN_OP_ROLE in zport.__ac_roles__:
             rolelist=list(zport.__ac_roles__)
 	    rolelist.remove(ZEN_OP_ROLE)
@@ -257,16 +263,16 @@ class ZenPack(ZenPackBase):
 
     def removeZenCommonRole(self, zport):
         #logfile_r=open(logfileBaseName+'/logfile_r', 'a')
-	dmd = self.dmd
+        dmd = self.dmd
         rms = (dmd.getPhysicalRoot().acl_users.roleManager,
                     zport.acl_users.roleManager)
-	# This removes the role from the roleManager
-	# If a user has this role, it is simply removed from them
+	    # This removes the role from the roleManager
+	    # If a user has this role, it is simply removed from them
         for rm in rms:
             #logfile_r.write(' rm.listRoleIds() is %s  \n ' % (rm.listRoleIds()))
             if ZEN_COMMON_ROLE in rm.listRoleIds():
                 rm.removeRole(ZEN_COMMON_ROLE)
-	#This removes the role from the manage_access list
+	    #This removes the role from the manage_access list
         if ZEN_COMMON_ROLE in zport.__ac_roles__:
             rolelist=list(zport.__ac_roles__)
 	    rolelist.remove(ZEN_COMMON_ROLE)
@@ -350,8 +356,6 @@ def manage_addRole(self, newId=None, REQUEST=None):
     if not (us.id in selfRoles):
         AdministrativeRole(us, self)
         logfile_a.write(' In base object (including device) clause - role for object %s is %s. New us is %s \n ' % (self.id, selfRoles, us.id))
-    # If the object is not a device then apply the admin role to all devices within the organizer
-    if not hasattr(self,'deviceClass'):
         for dev in self.getSubDevices():
             roleNames = [r.id for r in dev.adminRoles() ]
             logfile_a.write(' roleNames for %s are %s . New user is %s \n ' % (dev.id, roleNames, us.id))
@@ -497,12 +501,12 @@ def manage_deleteAdministrativeRole_UserSettings(self, delids=(), REQUEST=None):
     logfile_u.close()
 
 
-from itertools import imap
-from Products.ZenModel.DeviceOrganizer import DeviceOrganizer
-from Products.ZenModel.DeviceGroup import DeviceGroup
-from Products.ZenModel.System import System
-from Products.ZenModel.Location import Location
-from Products.ZenModel.Device import Device
+#from itertools import imap
+#from Products.ZenModel.DeviceOrganizer import DeviceOrganizer
+#from Products.ZenModel.DeviceGroup import DeviceGroup
+#from Products.ZenModel.System import System
+#from Products.ZenModel.Location import Location
+#from Products.ZenModel.Device import Device
 from zope.event import notify
 from Products.ZenMessaging.ChangeEvents.events import ObjectAddedToOrganizerEvent, ObjectRemovedFromOrganizerEvent
 from Products.Zuul.decorators import info
@@ -569,7 +573,7 @@ def update_organizer_devices_with_adminRole(self):
     logfile_dar=open(logfileBaseName+'/logfile_dar', 'a')
     try:
         # Check that this really is an organizer
-        organizername = self.getOrganizerName()
+        #organizername = self.getOrganizerName()
         for ar in self.adminRoles():
             id = ar.id
             role = ar.role
@@ -610,6 +614,8 @@ AdministrativeRoleable.manage_editAdministrativeRoles = manage_editRoles
 AdministrativeRoleable.manage_deleteAdministrativeRole = manage_deleteRole
 AdministrativeRoleable.setAdminLocalRoles = setLocalRoles
 
+#AdministrativeRoleable.setAdminLocalRoles = setLocalRoles
+
 # monkey patch this method into UserSettings
 
 from Products.ZenModel.UserSettings import UserSettings
@@ -622,6 +628,7 @@ DeviceFacade.removeDevices = removeDevices
 
 # Bug exists when a User group is deleted - no check made for an Administered Object relationship so
 #  half a relationship is left hanging - ticket 7837
+# Zenoss 5.1.9 has identical manage_deleteGroups as Zenoss 4.2.5 SUP671
 
 #security.declareProtected(ZEN_MANAGE_DMD, 'manage_deleteGroups')
 def manage_deleteGroups(self, groupids=(), REQUEST=None):

@@ -3,8 +3,8 @@
 # or saved.  Do not modify them directly here.
 # NB: PACKAGES is deprecated
 NAME = "ZenPacks.skills1st.UserRoles"
-VERSION = "1.1.3"
-AUTHOR = "Jane Curry"
+VERSION = "1.1.4"
+AUTHOR = "Jane Curry jane.curry@skills-1st.co.uk"
 LICENSE = "GPLv2"
 NAMESPACE_PACKAGES = ['ZenPacks', 'ZenPacks.skills1st']
 PACKAGES = ['ZenPacks', 'ZenPacks.skills1st', 'ZenPacks.skills1st.UserRoles']

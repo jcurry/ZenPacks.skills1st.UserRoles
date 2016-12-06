@@ -5,7 +5,6 @@ ZenPacks.skills1st.UserRoles
 Description
 ===========
 
-NOTE THAT THIS IS A BETA ZENPACK AND SHOULD NOT BE INSTALLED ON A PRODUCTION SYSTEM.
 
 Zenoss Core doesn't provide any easy way to create new roles and permissions.  Zenoss Enterprise has the Device Access Control Lists ZenPack (documented in the Extended Monitoring Guide) but I don't believe this delivers anything very sophisticated.
 
@@ -17,10 +16,10 @@ I have created a ZenPack that works with the concept of Administered Objects to:
     * Create a new role, ZenCommon, with very minimal permissions
     * For those devices / device organizers that are allocated as Administered Objects to a user,  devices can be viewed, their events can be Ack'ed / Closed, performance graphs are available and Locations will appear on the Dashboard GoogleMaps portlet.
     * Conversely, users ONLY see what are allocated to them as Administerd Objects
-    * I have included a utility I found on the wiki (I think from cluther???) - copyDashboardState.py - that copies a model dashboard to other users - it's in the lib directory.
+    * I have included a utility I found on the wiki (I think from cluther???) - copyDashboardState.py - that copies a model dashboard to other users - it's in the lib directory.  In 5.x this is no longer necessary as the standard GUI makes it simple to share Dashboards.
     * Fixes various bugs to do with Administered Objects so that Locations, Groups Systems and Device Classes can be allocated / removed successfully as Administered Objects
 
-This is currently development code and would much appreciate other testers.  The code should be installed in a backed-up, test environment.  The ZenPack was developed in a 3.1 environment and has at least been installed on a 2.5.2 system.
+This is currently development code and would much appreciate other testers.  The code should be installed in a backed-up, test environment.  The ZenPack was developed in a 3.1 environment and has at least been installed on a 2.5.2 system. It has now also been tested on a 5.1.9 system.
 
     * Download the tarball
     * Untar it - I put such things into $ZENHOME/local.  Change to this directory.
@@ -28,7 +27,7 @@ This is currently development code and would much appreciate other testers.  The
         * zenpack --link --install ZenPacks.skills1st.UserRoles
         * zenhub restart
         * zopectl restart
-        * Point your browser at <your zenoss>:8080/zport/manage_access and check that ZenOperator and ZenCommon roles exist
+        * Point your browser at <your zenoss>:<your port>/zport/manage_access and check that ZenOperator and ZenCommon roles exist
     * Read the README and the comments at the start of __init__.py
     * To test the ZenPack:
         * Create a test group
@@ -47,10 +46,7 @@ This ZenPack creates 2 new roles; it does not look at creating any new permissio
 
 Organisation will want a more generic way of specifying roles and permissions.
 
-I am actively looking for other sponsors of this work.  I am hoping that it is of interest to several organisations who would be prepared to contribute development funds and/or coding efforts - obviously they also get to help specify the requirements.
  
-
-The Zenoss Community Alliance hopes that this will be the first example of a joint community development.
 
 
 Components
@@ -61,7 +57,7 @@ Components
 Requirements & Dependencies
 ===========================
 
-    * Zenoss Versions Supported: 3.1
+    * Zenoss Versions Supported: 3.1, 4.2.5, 5.1.9
     * External Dependencies: 
     * ZenPack Dependencies:
     * Installation Notes: zenhub and zopectl restart after installing this ZenPack.
@@ -74,6 +70,7 @@ below.
 
 * Zenoss 3.0+ `Latest Package for Python 2.6`_
 * Zenoss 4.0+ `Latest Package for Python 2.7`_
+* Zenoss 5.0+ `Latest Package for Python 2.7 5.x`_
 
 Installation
 ============
@@ -115,8 +112,10 @@ Change History
 ==============
 * 1.0.1
    * Initial Release
-* 1.1.1
+* 1.1.3
    * Release for 4.x with fixes for ZenPack removal (_excludePath message caused by change in role attribute) 
+* 1.1.4
+   * Release for 5.x 
 
 Screenshots
 ===========
@@ -126,7 +125,8 @@ Screenshots
 .. External References Below. Nothing Below This Line Should Be Rendered
 
 .. _Latest Package for Python 2.6: https://github.com/jcurry/ZenPacks.skills1st.UserRoles/blob/master/dist/ZenPacks.skills1st.UserRoles-1.0.1-py2.6.egg?raw=true
-.. _Latest Package for Python 2.7: https://github.com/jcurry/ZenPacks.skills1st.UserRoles/blob/4.x/dist/ZenPacks.skills1st.UserRoles-1.1.1-py2.7.egg?raw=true
+.. _Latest Package for Python 2.7: https://github.com/jcurry/ZenPacks.skills1st.UserRoles/blob/4.x/dist/ZenPacks.skills1st.UserRoles-1.1.3-py2.7.egg?raw=true
+.. _Latest Package for Python 2.7 5.x: https://github.com/jcurry/ZenPacks.skills1st.UserRoles/blob/5.x/dist/ZenPacks.skills1st.UserRoles-1.1.4-py2.7.egg?raw=true
 
 .. |myScreenshot| image:: http://github.com/jcurry/ZenPacks.skills1st.UserRoles/raw/master/screenshots/myScreenshot.jpg
 
