@@ -38,7 +38,7 @@ This is currently development code and would much appreciate other testers.  The
         * Take care with testing - web browsers are likely to cache who you are logged on as, even if you logoff one tab
 
  
-For more discussions around the development process have a look at http://community.zenoss.org/message/59387#59387 .
+For more discussions around the development process have a look at http://monitoringartist.github.io/community.zenoss.org/message/61495.html .
 
 This is just a starting point.  Users authorised to see various Administered Objects don't see any reports (but they do get a blank REPORTS top-level menu).
 
@@ -119,7 +119,6 @@ Change History
 
 Screenshots
 ===========
-|myScreenshot|
 
 
 .. External References Below. Nothing Below This Line Should Be Rendered
@@ -128,7 +127,6 @@ Screenshots
 .. _Latest Package for Python 2.7: https://github.com/jcurry/ZenPacks.skills1st.UserRoles/blob/4.x/dist/ZenPacks.skills1st.UserRoles-1.1.3-py2.7.egg?raw=true
 .. _Latest Package for Python 2.7 5.x: https://github.com/jcurry/ZenPacks.skills1st.UserRoles/blob/5.x/dist/ZenPacks.skills1st.UserRoles-1.1.4-py2.7.egg?raw=true
 
-.. |myScreenshot| image:: http://github.com/jcurry/ZenPacks.skills1st.UserRoles/raw/master/screenshots/myScreenshot.jpg
 
                                                                         
 
